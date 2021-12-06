@@ -20,7 +20,6 @@ steps:
 - task: Npm@1
   displayName: 'Run npm install'
   inputs:
-    versionSpec: '12.x'
     verbose: false
 
 - script: './node_modules/.bin/node-sass $(wwwrootDir) --output $(wwwrootDir)'
