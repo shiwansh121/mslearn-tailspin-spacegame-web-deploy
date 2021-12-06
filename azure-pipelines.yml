@@ -1,4 +1,9 @@
 trigger:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '6.x'
+    checkLatest: true
+    force32bit: true
 - '*'
 
 pool:
